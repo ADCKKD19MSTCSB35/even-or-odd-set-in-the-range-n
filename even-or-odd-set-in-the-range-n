@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+ class Demo
+{ 
+	public static void main(String argv[]){ 
+		int i,c,rev=0,y=0;	
+		Scanner t=new Scanner(System.in);
+		i=t.nextInt();
+	while(i>0)
+	{c=i%10;
+	if(c%2==0)
+	{ rev=rev*10+c;
+	}
+        else
+        { y=y*10+c;
+	}
+	i=i/10;
+	}
+System.out.println("even set in reverse order:"+rev);
+System.out.println("odd set in reverse order:"+y);
+}
+}
+OUTPUT:
+even set in reverse order:42
+odd set in reverse order:531
